@@ -2,6 +2,7 @@ let map;
 let autocomplete;
 let marker;
 
+//Función para inicializar el mapa y el campo de autocompletar
 function initMap() {
   // Inicializar el mapa
   map = new google.maps.Map(document.getElementById("map"), {
