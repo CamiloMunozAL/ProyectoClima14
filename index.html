@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación del clima</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxlO8ILdL4GvaE8wreaAke_-k3Al4V-IM&libraries=places&callback=initMap"
+      async
+      defer
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Aplicación del clima</h1>
+    </header>
+    <div class="container">
+      <input
+        id="location-input"
+        type="text"
+        placeholder="Entrar a la localización"
+      />
+      <div id="map"></div>
+      <div id="weather-info">
+        <div class="weather-variable">
+          <h2>Temperatura actual</h2>
+          <p id="temperature">0</p>
+        </div>
+
+        <div class="weather-variable">
+          <h2>Maxima temperatura del dia</h2>
+          <p id="temperature-max">0</p>
+        </div>
+
+        <div class="weather-variable">
+          <h2>Minima temperatura del dia</h2>
+          <p id="temperature-min">0</p>
+        </div>
+
+        <div class="weather-variable">
+          <h2>Humedad relativa</h2>
+          <p id="humidity">0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
