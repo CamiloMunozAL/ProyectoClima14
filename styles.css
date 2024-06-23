@@ -18,6 +18,20 @@ body {
 
 header {
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header div {
+  background-color: rgb(223, 188, 255);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 h1 {
@@ -86,5 +100,8 @@ h1 {
 
   #weather-info {
     grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
   }
 }
